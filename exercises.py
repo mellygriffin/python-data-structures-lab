@@ -93,7 +93,8 @@ def list_home_town_items():
         }
     home_town_items = []
     for key, val in home_town.items() :
-        home_town_items.append = {f'{key} = {val}'}
+        home_town_items.append({f'{key} = {val}'})
+    return home_town_items
 
 # Call the function and print the result
 print('Exercise 5:', list_home_town_items())
