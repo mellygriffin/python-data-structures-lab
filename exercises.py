@@ -86,15 +86,14 @@ def manage_students():
 # Use a for loop to iterate over the key: value pairs in the home_town dictionary and append a string with the following format to home_town_items: "<key> = <value>"
 
 def list_home_town_items():
-     home_town = {
-        'city': 'Mont Belvieu',
-        'state': 'Texas',
-         'population': 1641,
-     }
-home_town_items = []
-for item in home_town_items:
-    home_town_items += item
-    home_town_items = {f"{key} = {value}"}
+    home_town = {
+            'city': 'Mont Belvieu',
+            'state': 'Texas',
+            'population': 1641,
+        }
+    home_town_items = []
+    for key, val in home_town.items() :
+        home_town_items.append = {f'{key} = {val}'}
 
 # Call the function and print the result
 print('Exercise 5:', list_home_town_items())
